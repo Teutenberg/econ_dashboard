@@ -6,8 +6,7 @@ import os
 # Set up paths
 script_dir = os.path.dirname(os.path.abspath(__file__))
 db_path = os.path.join(script_dir, 'landing.duckdb')
-
-table_name = 'landing_CREDIT_CONDITIONS_C60'
+table_name = 'CREDIT_CONDITIONS_C60'
 
 # Connect to DuckDB and load data
 db_con = duckdb.connect(db_path)
