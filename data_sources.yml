@@ -1,0 +1,146 @@
+data_sources:
+  - name : "CREDIT_CONDITIONS_C60"
+    description: "This data summarises the availability of credit and the willingness of households and businesses to use it. It is based on a survey of New Zealand banks."
+    url: "https://www.rbnz.govt.nz/-/media/project/sites/rbnz/files/statistics/series/c/c60/hc60.xlsx"
+    type: "file"
+    format: "xlsx"
+    format_options:
+      sheet_name: "Data"
+      skip_rows: 0
+      header_rename: [
+        "DATE",
+        "LD_PAST_6M_RESI_MORTGAGE",
+        "LD_PAST_6M_CONSUMER",
+        "LD_PAST_6M_COMM_PROPERTY",
+        "LD_PAST_6M_SME",
+        "LD_PAST_6M_CORP",
+        "LD_PAST_6M_AGRI",
+        "LD_PAST_6M_AGRI_DAIRY",
+        "LD_PAST_6M_AGRI_SHEEP_BEEF",
+        "LD_PAST_6M_AGRI_OTHER",
+        "LD_NEXT_6M_RESI_MORTGAGE",
+        "LD_NEXT_6M_CONSUMER",
+        "LD_NEXT_6M_COMM_PROPERTY",
+        "LD_NEXT_6M_SME",
+        "LD_NEXT_6M_CORP",
+        "LD_NEXT_6M_AGRI",
+        "LD_NEXT_6M_AGRI_DAIRY",
+        "LD_NEXT_6M_AGRI_SHEEP_BEEF",
+        "LD_NEXT_6M_AGRI_OTHER",
+        "CA_PAST_6M_RESI_MORTGAGE",
+        "CA_PAST_6M_CONSUMER",
+        "CA_PAST_6M_COMM_PROPERTY",
+        "CA_PAST_6M_SME",
+        "CA_PAST_6M_CORP",
+        "CA_PAST_6M_AGRI",
+        "CA_NEXT_6M_RESI_MORTGAGE",
+        "CA_NEXT_6M_CONSUMER",
+        "CA_NEXT_6M_COMM_PROPERTY",
+        "CA_NEXT_6M_SME",
+        "CA_NEXT_6M_CORP",
+        "CA_NEXT_6M_AGRI",
+        "CA_PAST_3Y_HOUSEHOLD",
+        "CA_PAST_3Y_COMM_PROPERTY",
+        "CA_PAST_3Y_SME",
+        "CA_PAST_3Y_CORP",
+        "CA_PAST_3Y_AGRI",
+        "FAAC_COST_OF_FUND",
+        "FAAC_BALANCE_SHEET_CONSTRAINT",
+        "FAAC_PRESSURE_FROM_COMPETITION",
+        "FAAC_BANK_PRECEPTION_OF_RISK",
+        "FAAC_BANK_RISK_TOLERANCE",
+        "FAAC_REGULATORY_CHANGE"
+      ]
+    tags: ["RBNZ", "credit_conditions", "c60"]
+    metadata:
+      source: "Reserve Bank of New Zealand"
+      last_updated: "24 April 2025"
+  
+  - name : "GROSS_DOMESTIC_PRODUCT_M5"
+    description: "This data tracks the Gross Domestic Product (GDP) of New Zealand over time. The GDP provides a snapshot of the performance of the economy and is New Zealand's official measure of economic growth."
+    url: "https://www.rbnz.govt.nz/-/media/project/sites/rbnz/files/statistics/series/m/m5/hm5.xlsx"
+    type: "file"
+    format: "xlsx"
+    format_options:
+      sheet_name: "Data"
+      skip_rows: 4
+      header_rename: [
+        "DATE",
+        "PROD_GDP_REAL_MIL",
+        "PROD_GDP_REAL_MIL_SA",
+        "PROD_GDP_REAL_QQ_SA",
+        "PROD_GDP_REAL_YY",
+        "PROD_GDP_NOM_MIL",
+        "PROD_GDP_NOM_MIL_SA",
+        "PROD_GDP_NOM_QQ_SA",
+        "PROD_GDP_NOM_YY",
+        "EXPE_GDP_REAL_MIL",
+        "EXPE_GDP_REAL_MIL_SA",
+        "EXPE_GDP_REAL_QQ_SA",
+        "EXPE_GDP_REAL_YY",
+        "EXPE_GDP_NOM_MIL_",
+        "EXPE_GDP_NOM_MIL_SA",
+        "EXPE_GDP_NOM_QQ_SA",
+        "EXPE_GDP_NOM_YY",
+        "PRI_FIN_CONSUMP_EXPE_REAL_MIL",
+        "PRI_FIN_CONSUMP_EXPE_REAL_MIL_SA",
+        "PRI_FIN_CONSUMP_EXPE_REAL_QQ_SA",
+        "PRI_FIN_CONSUMP_EXPE_REAL_YY",
+        "PRI_FIN_CONSUMP_EXPE_NOM_MIL",
+        "PRI_FIN_CONSUMP_EXPE_NOM_MIL_SA",
+        "PRI_FIN_CONSUMP_EXPE_NOM_QQ_SA",
+        "PRI_FIN_CONSUMP_EXPE_NOM_YY",
+        "GOV_FIN_CONSUMP_EXPE_REAL_MIL",
+        "GOV_FIN_CONSUMP_EXPE_REAL_MIL_SA",
+        "GOV_FIN_CONSUMP_EXPE_REAL_QQ_SA",
+        "GOV_FIN_CONSUMP_EXPE_REAL_YY",
+        "GOV_FIN_CONSUMP_EXPE_NOM_MIL",
+        "GOV_FIN_CONSUMP_EXPE_NOM_MIL_SA",
+        "CHG_INV_REAL_MIL",
+        "CHG_INV_REAL_MIL_SA",
+        "CHG_INV_NOM_MIL",
+        "CHG_INV_NOM_MIL_SA",
+        "CHG_INV_NOM_QQ_SA",
+        "CHG_INV_NOM_YY",
+        "GROSS_FIX_CAP_FORM_RESI_BUILD_REAL_MIL",
+        "GROSS_FIX_CAP_FORM_RESI_BUILD_REAL_MIL_SA",
+        "GROSS_FIX_CAP_FORM_RESI_BUILD_REAL_QQ_SA",
+        "GROSS_FIX_CAP_FORM_RESI_BUILD_REAL_YY",
+        "GROSS_FIX_CAP_FORM_RESI_BUILD_NOM_MIL",
+        "GROSS_FIX_CAP_FORM_RESI_BUILD_NOM_MIL_SA",
+        "GROSS_FIX_CAP_FORM_RESI_BUILD_NOM_QQ_SA",
+        "GROSS_FIX_CAP_FORM_RESI_BUILD_NOM_YY",
+        "GROSS_FIX_CAP_FORM_OTHER_ASSET_REAL_MIL",
+        "GROSS_FIX_CAP_FORM_OTHER_ASSET_REAL_MIL_SA",
+        "GROSS_FIX_CAP_FORM_OTHER_ASSET_REAL_QQ_SA",
+        "GROSS_FIX_CAP_FORM_OTHER_ASSET_REAL_YY",
+        "GROSS_FIX_CAP_FORM_OTHER_ASSET_NOM_MIL",
+        "GROSS_FIX_CAP_FORM_OTHER_ASSET_NOM_MIL_SA",
+        "GROSS_FIX_CAP_FORM_OTHER_ASSET_NOM_QQ_SA",
+        "GROSS_FIX_CAP_FORM_OTHER_ASSET_NOM_YY",
+        "GROSS_NAT_EXPE_REAL_MIL",
+        "GROSS_NAT_EXPE_REAL_MIL_SA",
+        "GROSS_NAT_EXPE_REAL_QQ_SA",
+        "GROSS_NAT_EXPE_REAL_YY",
+        "GROSS_NAT_EXPE_NOM_MIL",
+        "GROSS_NAT_EXPE_NOM_MIL_SA",
+        "GROSS_NAT_EXPE_NOM_QQ_SA",
+        "GROSS_NAT_EXPE_NOM_YY",
+        "EXPORT_GS_REAL_MIL",
+        "EXPORT_GS_REAL_MIL_SA",
+        "EXPORT_GS_REAL_QQ_SA",
+        "EXPORT_GS_REAL_YY",
+        "EXPORT_GS_NOM_MIL",
+        "EXPORT_GS_NOM_MIL_SA",
+        "EXPORT_GS_NOM_QQ_SA",
+        "EXPORT_GS_NOM_YY",
+        "IMPORT_GS_REAL_MIL",
+        "IMPORT_GS_REAL_MIL_SA",
+        "IMPORT_GS_REAL_QQ_SA",
+        "IMPORT_GS_REAL_YY"
+      ]
+    tags: ["RBNZ", "GDP", "m5"]
+    metadata:
+      source: "Reserve Bank of New Zealand"
+      last_updated: "19 June 2025" 
+

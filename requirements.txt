@@ -1,0 +1,17 @@
+# Core data analysis packages
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Data visualization
+matplotlib>=3.7.0
+plotly>=5.14.0
+
+# Data processing and utilities
+duckdb>=0.10.0  # Analytical database engine
+openpyxl>=3.1.0  # Excel file support for pandas
+dbt-duckdb>=1.7.0  # dbt adapter for DuckDB
+
+# Web app framework
+streamlit>=1.35.0
+
+
