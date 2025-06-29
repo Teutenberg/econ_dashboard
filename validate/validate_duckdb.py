@@ -3,12 +3,11 @@ import yaml
 import os
 
 # Load data_sources.yml from the parent directory of this script
-script_dir = os.path.dirname(os.path.abspath(__file__))
-yaml_path = os.path.join(os.path.dirname(script_dir), 'data_sources.yml')
+yaml_path = os.path.join('data_sources', 'data_sources.yml')
 with open(yaml_path, 'r', encoding='utf-8') as f:
     config = yaml.safe_load(f)
 
-db_path = os.path.join(os.path.dirname(script_dir), 'landing.duckdb')
+db_path = 'landing.duckdb'
 
 con = duckdb.connect(db_path)
 
