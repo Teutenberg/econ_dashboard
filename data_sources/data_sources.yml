@@ -142,5 +142,19 @@ data_sources:
     tags: ["RBNZ", "GDP", "m5"]
     metadata:
       source: "Reserve Bank of New Zealand"
-      last_updated: "19 June 2025" 
+      last_updated: "19 June 2025"
+  
+  - name : "DOMESTIC_TRADE_M4"
+    description: "This data shows the retail, wholesale and manufacturing sales in New Zealand each quarter. Source: Statistics New Zealand."
+    url: "https://www.rbnz.govt.nz/-/media/project/sites/rbnz/files/statistics/series/m/m4/hm4.xlsx"
+    type: "file"
+    format: "xlsx"
+    format_options:
+      sheet_name: "Data"
+      skip_rows: 4
+      header_rename: []  # Update with actual column names if known
+    tags: ["RBNZ", "domestic_trade", "m4"]
+    metadata:
+      source: "Reserve Bank of New Zealand"
+      last_updated: "9 June 2025"
 

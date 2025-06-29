@@ -36,5 +36,5 @@ if (Test-Path "requirements.txt") {
 } else {
     Write-Host "No requirements.txt found. Skipping package installation."
 }
-
+Clear-Host
 Write-Host "Virtual environment setup complete!"

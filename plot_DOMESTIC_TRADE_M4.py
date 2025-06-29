@@ -4,7 +4,7 @@ from plot_utils import plot_duckdb_table
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     db_path = os.path.join(script_dir, 'landing.duckdb')
-    table_name = 'CREDIT_CONDITIONS_C60'
+    table_name = 'DOMESTIC_TRADE_M4'
     try:
         fig = plot_duckdb_table(db_path, table_name)
     except Exception as e:
